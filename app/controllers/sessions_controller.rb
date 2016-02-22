@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
 
     #logged in, horray
     session[:user_id] = @user.id
-    redirector_to notes_path
+    redirect_to notes_path
   end
 
 end
