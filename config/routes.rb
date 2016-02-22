@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  root 'sessions#new'
+
   # this means edit user path with be /user/edit (singular)
   resource :users
+  resource :sessions
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
