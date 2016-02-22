@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :notes
   root 'sessions#new'
 
   # this means edit user path with be /user/edit (singular)
